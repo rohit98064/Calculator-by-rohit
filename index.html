@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title> Simple Calculator</title>
+  <style>
+   h1{
+  color:Red;
+  text-align:center;
+   }
+  p{
+    color:Blue;
+    font-size:30px;
+  }
+  </style>
+</head>
+<body>
+  <h1>
+  Calculator By ROHIT
+  </h1>
+  Enter 1<sub>st</sub>number:
+  <input type="number" placeholder="0" id="num1"><br>
+  Enter 2<sub>nd</sub>number:
+  <input type="number" placeholder="0" id="num2">
+  <p id="result">Result Will Show Here</p>
+  Click on your choice:<br>
+  <button onclick="addNumbers()">Add</button><br>
+  <button onclick="subNumbers()">Subtract</button><br>
+  <button onclick="mulNumbers()">Multiply</button><br>
+  <button onclick="divNumbers()">Division</button>
+  <script>
+  function addNumbers()
+{
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+    var c = parseFloat(a) + parseFloat(b);
+    document.getElementById("result").innerHTML="Addition is:"+c;
+}
+    function subNumbers()
+  {
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+    var c = parseFloat(a) - parseFloat(b);
+    document.getElementById("result").innerHTML="Subtract is:"+c;
+  }
+   function mulNumbers()
+  {
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+    var c = parseFloat(a) * parseFloat(b);
+    document.getElementById("result").innerHTML="Multiply is:"+c;
+  }
+   function divNumbers()
+  {
+    var a = document.getElementById("num1").value;
+    var b = document.getElementById("num2").value;
+    var c = parseFloat(a) / parseFloat(b);
+    document.getElementById("result").innerHTML="Division is:"+c;
+  }
+  </script>
+</body>
+</html>
