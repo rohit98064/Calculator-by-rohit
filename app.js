@@ -2,7 +2,7 @@ const DownloadForm = document.getElementById('download-form');
 DownloadForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const url = e.target.url.value;
-    format = '360';
+    format = '1080';
     download(url, format);
     document.getElementById('url-input').value = '';
 });
